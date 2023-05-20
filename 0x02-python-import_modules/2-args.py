@@ -7,7 +7,7 @@ count = len(sys.argv) - 1
 if count == 0:
     print("0 arguments.")
 elif count == 1:
-    print("1: argument:")
+    print("1 argument:")
     for i in range(1, 2):
         print("1: {}".format(sys.argv[i])) 
 
