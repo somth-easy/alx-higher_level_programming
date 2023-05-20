@@ -9,9 +9,8 @@ if count == 0:
 elif count == 1:
     print("1 argument:")
     for i in range(1, 2):
-        print("1: {}".format(sys.argv[i])) 
+        print("1: {}".format(sys.argv[i]))
 else:
     print("{} arguments:".format(count))
     for i in range(count):
         print("{}: {}".format(i + 1, sys.argv[i + 1]))
-
