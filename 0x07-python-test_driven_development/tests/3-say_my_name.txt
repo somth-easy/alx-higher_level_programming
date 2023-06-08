@@ -8,6 +8,8 @@ Usage
 
 'say_my_name(...)' prints the provided first name and last name.
 
+The function expects a string argument first_name and an optional string argument last_name.
+
 ::
 
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
@@ -18,21 +20,6 @@ Usage
 
 	>>> say_my_name("Alice")
 	My name is Alice 
-
-Arguments
-=========
-
-The function expects a string argument first_name and an optional string argument last_name.
-
-::
-
-	>>> say_my_name("John", "Doe")
-	My name is John Doe
-
-::
-
-	>>> say_my_name("Walter", "White")
-	My name is Walter White
 
 Non-Strings
 ===========
