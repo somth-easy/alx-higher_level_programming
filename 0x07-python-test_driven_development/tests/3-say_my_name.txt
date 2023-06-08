@@ -17,6 +17,9 @@ The function expects a string argument first_name and an optional string argumen
 	>>> say_my_name("John", "Doe")
 	My name is John Doe
 
+	>>> say_my_name("Steve", "Biko")
+	My name is Steve Biko
+
 The parameter ```last_name``` is optional. If no last name is provided,
 an empty string is printed instead.
 
