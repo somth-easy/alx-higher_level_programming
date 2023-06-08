@@ -31,7 +31,7 @@ The function expects two string arguments: 'first_name' and 'last_name' (optiona
 
 ::
 
-	say_my_name("John", None)
+	>>>say_my_name("John", None)
 	# Expected: Traceback (most recent call last):
 	# TypeError: last_name must be a string
 
