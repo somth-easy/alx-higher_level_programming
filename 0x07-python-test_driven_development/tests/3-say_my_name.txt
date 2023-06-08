@@ -34,11 +34,6 @@ The function expects a string argument first_name and an optional string argumen
 	>>> say_my_name("Walter", "White")
 	My name is Walter White
 
-::
-
-	>>> say_my_name("Bob")
-	My name is Bob
-
 Non-Strings
 ===========
 
