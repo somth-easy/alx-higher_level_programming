@@ -22,7 +22,7 @@ Usage
 Arguments
 =========
 
-The function expects two string arguments: 'first_name' and 'last_name' (optional).
+The function expects a string argument first_name and an optional string argument last_name.
 
 ::
 
@@ -31,9 +31,13 @@ The function expects two string arguments: 'first_name' and 'last_name' (optiona
 
 ::
 
-	say_my_name("John", None)
-	# Expected: Traceback (most recent call last):
-	# TypeError: last_name must be a string
+	>>> say_my_name("Walter", "White")
+	My name is Walter White
+
+::
+
+	>>> say_my_name("Bob")
+	My name is Bob
 
 Non-Strings
 ===========
