@@ -2,6 +2,6 @@
 
 for val in range(100):
     if val == 99:
-        print(f"{val}")
+        print("{}".format(val))
     else:
-        print(f"{val:02}", end=', ')
+        print("{:02}".format(val), end=', ')
