@@ -13,5 +13,5 @@ if __name__ == "__main__":
         print("{}".format(sys.argv[argc]))
     else:
         for i in range(1, argc + 1):
-            retval = add(retval, int(sys.argv[i]))
+            retval += int(sys.argv[i])
         print("{}".format(retval))
