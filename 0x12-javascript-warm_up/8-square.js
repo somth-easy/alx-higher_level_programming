@@ -12,6 +12,6 @@ if (/^-?\d+$/.test(args[0])) {
   } else if (myInt < 0) {
     process.exit();
   }
-} else if (!/^-?\d+$/.test(args[0]) && args.length < 1) {
+} else {
   console.log('Missing size');
 }
