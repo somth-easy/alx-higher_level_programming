@@ -2,7 +2,7 @@
 
 const args = process.argv.slice(2);
 
-if (args.length > 0) {
+if (args[0] !== undefined) {
   for (const arg in args) {
     console.log(args[arg]);
   }
