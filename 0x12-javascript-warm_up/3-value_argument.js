@@ -3,7 +3,9 @@
 const args = process.argv.slice(2);
 
 if (args.length > 0) {
-  console.log(args.join(' '));
+  for (const arg in args) {
+    console.log(args[arg]);
+  }
 } else {
   console.log('No argument');
 }
