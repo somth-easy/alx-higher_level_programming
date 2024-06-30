@@ -5,13 +5,13 @@ class Rectangle {
     if ((w > 0) && (h > 0)) {
       this.width = w;
       this.height = h;
-      this.chr = 'X';
     }
   }
 
   print () {
+    const chr = 'X';
     for (let x = this.height; x > 0; x--) {
-      console.log(this.chr.repeat(this.width));
+      console.log(chr.repeat(this.width));
     }
   }
 }
