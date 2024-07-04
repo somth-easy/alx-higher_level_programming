@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-class Squre():
-    pass
+class Square:
+     pass
