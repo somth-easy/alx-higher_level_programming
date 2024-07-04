@@ -6,4 +6,3 @@ def safe_print_integer(value):
     except TypeError:
         pass
     return isinstance(value, int)
-
