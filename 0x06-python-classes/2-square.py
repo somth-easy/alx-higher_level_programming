@@ -10,7 +10,7 @@ class Square:
             size (DataFrame): private attribute of class Square
     """
 
-    def __init__(self, size: int=0):
+    def __init__(self, size: int = 0):
         """Initialises the Square class
 
             args:
