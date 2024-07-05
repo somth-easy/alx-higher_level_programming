@@ -75,13 +75,12 @@ class Square:
         return val
 
     def my_print(self):
-        """Prints the square using # character"""
-
+        """Prints the square using # character
+        
+        if size is equal to 0, prints an empty line
+        """
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
-                if self.__position[0] < 1:
-                    print('{}'.format('#'*self.__size))
-                else:
-                    print('{}{}'.format(' '*self.position[0], '#'*self.size))
+            for _ in range(self.__size):
+                print(' ' * self.position[0] + '#' * self.size)
