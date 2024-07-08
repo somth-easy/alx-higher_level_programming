@@ -3,6 +3,8 @@
 
 
 class Rectangle:
+    """Rectangle class"""
+
     def __init__(self, width: int = 0, height: int = 0):
         """Initializes a new Rectangle instance
 
