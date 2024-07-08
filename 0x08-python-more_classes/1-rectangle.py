@@ -5,7 +5,7 @@
 class Rectangle:
     """Rectangle class"""
 
-    def __init__(self, width: int = 0, height: int = 0):
+    def __init__(self, width: int = 0, height: int = 0) -> None:
         """Initializes a new Rectangle instance
 
         Args:
@@ -16,17 +16,17 @@ class Rectangle:
         self.height = height
 
     @property
-    def width(self):
+    def width(self) -> int:
         """getter for attribute width"""
         return self.__width
 
     @property
-    def height(self):
+    def height(self) -> int:
         """getter for attribute height"""
         return self.__height
 
     @width.setter
-    def width(self, value: int = 0):
+    def width(self, value: int) -> None:
         """setter for attribute width
 
         Args:
@@ -43,7 +43,7 @@ class Rectangle:
         self.__width = value
 
     @height.setter
-    def height(self, value: int = 0):
+    def height(self, value: int) -> None:
         """setter for attribute height
 
         Args:
