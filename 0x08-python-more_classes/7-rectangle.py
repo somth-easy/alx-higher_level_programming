@@ -6,22 +6,20 @@ class Rectangle:
     """Rectangle class"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
-    def __init__(
-            self, width: int = 0, height: int = 0, print_symbol:
-            (str, list, int, tuple, float) = '#') -> None:
-
+    def __init__(self, width: int = 0, height: int = 0,) -> None:
         """Initializes a new Rectangle instance
 
         Args:
             width (int): the width of the rectangle.
             height (int): the height of the rectangle.
-            instances (int): counts number of instances created
+            number_of_instances (int): counts number of instances created
+            print_symbol (multi-data-type): character to be used to repr rect
         """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-        self.print_symbol = print_symbol
 
     @property
     def width(self) -> int:
@@ -86,7 +84,7 @@ class Rectangle:
         """Return a string representation of the rectangle using # symbol"""
         if not (self.width == 0 or self.height == 0):
             return "\n".join(
-                [str(self.print_symbol) * self.width
+                [str(Rectangle.print_symbol) * self.width
                  for _ in range(self.height)]
             )
         return ""
