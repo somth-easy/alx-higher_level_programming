@@ -10,9 +10,10 @@ class Rectangle:
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(
-            self, width: int = 0, height: int = 0, print_symbol="#"
+            self, width: int = 0, height: int = 0
                 ) -> None:
         """Initializes a new Rectangle instance
 
@@ -23,7 +24,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        self.print_symbol = print_symbol
+        Rectangle.print_symbol = "#"
         Rectangle.number_of_instances += 1
 
     @property
