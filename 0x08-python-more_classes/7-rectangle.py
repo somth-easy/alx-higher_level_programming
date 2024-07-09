@@ -24,7 +24,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.print_symbol = "#"
         Rectangle.number_of_instances += 1
 
     @property
@@ -85,7 +84,7 @@ class Rectangle:
         """Return a string representation of the rectangle using # symbol"""
         if not (self.width == 0 or self.height == 0):
             return "\n".join(
-                [str(Rectangle.print_symbol) * self.width
+                [str(self.print_symbol) * self.width
                  for _ in range(self.height)]
             )
         return ""
