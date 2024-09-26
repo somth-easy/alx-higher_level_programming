@@ -3,7 +3,6 @@
 /**
  * reverse_listint - reverses a linked list
  * @head: pointer to the first node in the list
- *
  * Return: pointer to the first node in the new list
  */
 void reverse_listint(listint_t **head)
@@ -12,14 +11,15 @@ void reverse_listint(listint_t **head)
 	listint_t *current = *head;
 	listint_t *next = NULL;
 
-while (current)
-{
-	next = current->next;
-	current->next = prev;
-	prev = current;
-	current = next;
-}
-*head = prev;
+	while (current)
+	{
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+
+	*head = prev;
 }
 
 /**
@@ -28,7 +28,6 @@ while (current)
  *
  * Return: 1 if it is, 0 if not
  */
-
 int is_palindrome(listint_t **head)
 {
 	listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
@@ -51,6 +50,7 @@ int is_palindrome(listint_t **head)
 		}
 		slow = slow->next;
 	}
+
 	reverse_listint(&dup);
 
 	while (dup && temp)
@@ -67,5 +67,5 @@ int is_palindrome(listint_t **head)
 	if (!dup)
 		return (1);
 
-return (0);
+	return (0);
 }
